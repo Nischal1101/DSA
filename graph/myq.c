@@ -1,3 +1,4 @@
+// HELLO THIS IS NISCHAL KAFLE
 #include <stdio.h>
 #include <stdlib.h>
 #define true 1
@@ -29,45 +30,42 @@ int main()
             {1, 0, 1, 0, 1, 0, 0},
             {0, 0, 1, 1, 0, 1, 1},
             {0, 0, 0, 0, 1, 0, 0},
-            {0, 0, 0, 0, 1, 0, 0}
-        };
-    
+            {0, 0, 0, 0, 1, 0, 0}};
 
+    // int choice, value;
+    // do
+    // {
+    //     printf("1.Enqueue\n2.Dequeue\n3.checkFront\n4.checkRear\n5.Exit\n");
+    //     printf("\nEnter the choice: ");
+    //     scanf("%d", &choice);
+    //     switch (choice)
+    //     {
+    //     case 1:
+    //         printf("Enter the value you want to insert\n");
+    //         scanf("%d", &value);
+    //         enqueue(&p, value);
+    //         break;
+    //     case 2:
+    //         dequeue(&p);
+    //         break;
+    //     case 3:
+    //         if (isEmpty(&p))
+    //             printf("Queue is empty\n");
+    //         else
+    //             printf("%d is in front of queue\n", checkFront(&p));
+    //         break;
+    //     case 4:
+    //         if (isEmpty(&p))
+    //             printf("Queue is empty\n");
+    //         else
+    //             printf("%d is in rear of queue\n", checkRear(&p));
+    //         break;
+    //     case 5:
+    //         printf("Bye bye\n");
+    //     }
 
-// int choice, value;
-// do
-// {
-//     printf("1.Enqueue\n2.Dequeue\n3.checkFront\n4.checkRear\n5.Exit\n");
-//     printf("\nEnter the choice: ");
-//     scanf("%d", &choice);
-//     switch (choice)
-//     {
-//     case 1:
-//         printf("Enter the value you want to insert\n");
-//         scanf("%d", &value);
-//         enqueue(&p, value);
-//         break;
-//     case 2:
-//         dequeue(&p);
-//         break;
-//     case 3:
-//         if (isEmpty(&p))
-//             printf("Queue is empty\n");
-//         else
-//             printf("%d is in front of queue\n", checkFront(&p));
-//         break;
-//     case 4:
-//         if (isEmpty(&p))
-//             printf("Queue is empty\n");
-//         else
-//             printf("%d is in rear of queue\n", checkRear(&p));
-//         break;
-//     case 5:
-//         printf("Bye bye\n");
-//     }
-
-// } while (choice != 5);
-return 0;
+    // } while (choice != 5);
+    return 0;
 }
 int isEmpty(struct queue *q)
 {
