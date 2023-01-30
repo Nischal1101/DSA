@@ -215,9 +215,9 @@ void deleteatspecific()
     else
     {
         temp = first;
-        printf("Enter Position : ");
-        scanf("%d", &pos);
-        for (i = 1; i < (pos - 1); i++)
+        printf("Enter Position :  ");       
+        scanf("%d",&pos);       
+        for (i = 1; i < (pos - 1); i++)                     
         {
             temp = temp->next;
         }

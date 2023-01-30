@@ -45,38 +45,15 @@ struct newNode *search(struct newNode *root, int key)
     else
         return search(root->right, key);
 }
-void insert(struct newNode *root, int key)
+struct newNode *iinsert(struct newNode *root, int value)
 {
-    struct newNode *prev = NULL;
-    while(root!=NULL)
-    {
-
-    prev == root;
-
-    if (key == root->data)
-    {
-
-        printf("Cannot insert %d, already in BST", key);
-        return;
-    }
-    else if (key < root->data)
-    {
-    root=root-left;
-    }
+    if (root == NULL)
+        root = createNode(value);
+    else if (root->data > value)
+        root->left = iinsert(root->left, value);
     else
-    {
-    root=root->rig
-    }
-    struct newNode *new = createNode(key);
-    if (key < prev->data)
-    {
-
-        prev->left = new;
-    }
-    else
-    {
-        prev->right = new;
-    }
+        root->right = iinsert(root->right, value);
+    return root;
 }
 void insert(struct newNode *root, int key)
 {
@@ -139,12 +116,12 @@ int main()
     {
         printf("The binary tree isn't a binary search tree\n");
     }
-    struct newNode *i = search(n, 105);
+    struct newNode *i = search(n, 89);
     if (i != NULL)
         printf("%d is found\n", i->data);
     else
         printf("element is not found\n");
-    insert(n, 89);
+    iinsert(n, 89);
     printf("%d is inserted\n", n->left->left->right->data);
     return 0;
 }

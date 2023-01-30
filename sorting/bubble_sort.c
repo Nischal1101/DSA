@@ -9,12 +9,12 @@ void merge_sort(int arr[], int l, int r);
 void merge(int arr[], int l, int mid, int r);
 int partition(int arr[], int l, int r);
 void display(int *arr);
-void swap(int a, int b)
+void swap(int *a, int *b)
 {
     int temp;
-    temp = a;
-    a = b;
-    b = temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 int main()
@@ -85,7 +85,7 @@ void selection_sort(int *arr)
         }
         if (min != i)
         {
-            swap(arr[i], arr[min]);
+            swap(&arr[i], &arr[min]);
         }
     }
 }

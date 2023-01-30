@@ -39,14 +39,18 @@ int main()
                 printf("Removed element is : %d \n", dequeue(&q));
             break;
         case 3:
-            if (q.rear < q.front)
+            if (isEmpty())
                 printf("QUEUE IS EMPTY \n");
+            else if (isFull())
+                printf("Queue is full\n");
             else
                 printf("Data : %d \n", check_front(&q));
             break;
         case 4:
-            if (q.rear < q.front)
+            if (isEmpty())
                 printf("QUEUE IS EMPTY \n");
+            else if (isFull())
+                printf("Queue is full\n");
             else
                 printf("Data : %d \n", check_rear(&q));
             break;
